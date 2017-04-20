@@ -13,5 +13,5 @@
 
 挖掘结果：
 ---------
-![image](https://github.com/SpongeBob90/HerbsARM/raw/master/app01/static/pictures/reslut01.jpg)<br><br>
-![image](https://github.com/SpongeBob90/HerbsARM/raw/master/app01/static/pictures/reslut02.jpg)<br>
+![image](https://github.com/SpongeBob90/HerbsARM/blob/master/app01/static/pictures/reslut1.png)<br><br>
+![image](https://github.com/SpongeBob90/HerbsARM/blob/master/app01/static/pictures/reslut2.png)<br>
