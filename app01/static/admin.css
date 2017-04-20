@@ -1,0 +1,187 @@
+/*1.先对页面做一些整体的设置*/
+/*清除所有元素的内外边距*/
+/*星是通用选择器，可以选择所有元素*/
+* {
+	padding:0;
+	margin:0;
+}
+/*统一设置页面上的字体*/
+body {
+	font-family: 
+		"微软雅黑","文泉驿正黑","黑体";
+}
+
+/*2.分区：设置边框、宽高*/
+/*统一设置所有div的边框，便于调试*/
+div {
+	/*都水平居中*/
+	margin:0 auto;
+}
+/*依次设置logo区、导航区、
+	核心区、版权区的宽高*/
+#logo {
+	width:960px;
+	height:61px;
+}
+#nav {
+	width:960px;
+	height:91px;
+}
+#main {
+	width:960px;
+	height:510px;
+}
+#copy {
+	width:960px;
+	height:50px;
+}
+/*设置核心区顶部内边距，预留出渐变条的位置*/
+#main {
+	padding-top:5px;
+}
+/*设置内容区的宽高*/
+#content {
+	width:950px;
+	height:500px;
+	border:5px solid #8ac1db;
+}
+#btn,#page {
+	height:40px;
+}
+#data {
+	height:310px;
+}
+
+/*3.设置页面的背景*/
+body {
+	background-color: #0EA8D8;
+}
+#logo {
+	background-image: 
+		url("../img/top_bg.png");
+}
+#nav {
+	background-color: #0488BB;
+}
+#main {
+	background: 
+		url("../img/content_bg.png")
+		repeat-x top;
+}
+#content {
+	background-color: #E8F3F8;
+}
+
+/*4.设置logo区和版权区的文字样式*/
+#logo {
+	text-align: left;
+	color: #fff;
+	font-family: "楷体";
+	/*padding-right: 40px;*/
+	background-image: url("/static/images/top_bg.png");
+}
+#logo a {
+	margin-right: 40px;
+	line-height: 61px;
+	color: #fff;
+	text-decoration: none;
+}
+#logo a:hover {
+	font-weight: bold;
+}
+#nav img {
+	padding:2px;
+}
+#nav img:hover{
+	position:relative;
+	left:1px;
+	top:-1px;
+}
+#copy p {
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	/*border: 1px solid red;*/
+	height: 25px;
+}
+#logo p {
+	padding: 5px;
+}
+
+/*5.设置表格样式*/
+#data table {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+#data table td {
+	border: 1px solid #ccc;
+}
+#data table thead tr {
+	background-color: #fbedce;
+	height: 40px;
+}
+#data table tbody tr {
+	background-color: #fff;
+	height: 32px;
+}
+/*所有单元格文本都居中*/
+#data table td {
+	text-align: center;
+}
+/*首行单元格文本加粗*/
+#data table thead td {
+	font-weight: bold;
+}
+/*悬停在数据行上时，背景色加深*/
+#data table tbody tr:hover {
+	background-color: #f7f9fd;
+}
+/*设置修改按钮样式*/
+#data table .update {
+	padding-left: 15px;
+	background: 
+		url("../img/modification.png")
+		no-repeat left;
+	border: 0;
+}
+/*设置删除按钮样式*/
+#data table .delete {
+	padding-left: 15px;
+	background: 
+		url("../img/delete.png")
+		no-repeat left;
+	border: 0;
+}
+
+/*6.定位logo、提示框*/
+#logo img {
+	float: left;
+}
+
+#content table {
+	width:80%;
+	margin:20px auto;
+	border-collapse:collapse;
+}
+#content td {
+	padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

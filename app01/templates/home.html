@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>仿真平台</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="/static/admin.css">
+	<link rel="shortcut icon" href="/static/images/logo.png" type="image/x-icon"/>
+	
+	<style type="text/css">
+		body{
+			background-color:#088;
+		}
+	</style>
+	<script>
+		function gohome(){
+			location.href="http://127.0.0.1:8991/AM/";
+		}
+		function logout(){
+			location.href="http://www.baidu.com";
+		}
+	</script>
+  </head>
+  
+  <body>
+	<form method="post" enctype="multipart/form-data">
+		<div id="logo"><p><img src="/static/images/logo1.gif"/><h1>中医处方数据挖掘仿真平台</h1></p></div>
+		<div id="nav" style="margin-top:2px;">	
+			<img src="/static/images/index_out.png" onclick="gohome();"/>
+			<img src="/static/images/logout.png" onclick="logout();"/>
+		</div>
+		<div id="main">
+			<div id="content" align="center">
+				<table>
+					<tr>
+						<td align="right">数&nbsp;&nbsp;&nbsp;据&nbsp;&nbsp;&nbsp;源：</td>
+						<td>{{uf.file}}</td>
+						<td align="right">数&nbsp;&nbsp;据&nbsp;&nbsp;源&nbsp;&nbsp;名&nbsp;称：</td>
+						<td><input type="text" value={{info_dict.filename}}></td>
+					</tr>
+					<tr>
+						<td align="right">事务的数量：</td>
+						<td><input type="text" value={{info_dict.t_num}}></td>
+						<td align="right">事务的平均长度：</td>
+						<td><input type="text" value={{info_dict.t_len}}></td>
+					</tr>
+					<tr>
+						<td align="right">项目的数量：</td>
+						<td><input type="text" value={{info_dict.i_num}}></td>
+						<td align="right"></td>
+						<td align="center"><input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;开始挖掘&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+					</tr>
+					<tr id="result">
+						<td align="right" valign="top">运 行 结 果：</td>
+						<td colspan=3><textarea style="font-size:18px;width:96%;height:300px;">{{info_dict.result}}</textarea></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&copy; 版权所有，违者必究。</p>
+		</div>
+	</form>
+  </body>
+</html>
